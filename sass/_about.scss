@@ -1,0 +1,50 @@
+@media (max-width: 767.98px) {
+
+    
+  #about {
+    align-items:flex-end !important;
+    
+    article {
+
+        width: 100% !important;
+        z-index: 1;
+
+        h2 {
+            width: 82% !important;
+            font-size: 2.5rem;
+
+        }
+
+        p {
+
+            margin-top: 1.8rem;
+            font-size: 2.1rem !important;
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+    }
+    img {height: 100% !important; 
+        width: 100% !important; z-index: 0;
+        filter: brightness(50%);
+    
+    
+    
+    }
+
+        
+
+
+
+  }
+  
+}

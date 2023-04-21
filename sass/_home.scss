@@ -1,5 +1,5 @@
 #home {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
     url("/img/imagen-home.jpg");
   background-size: cover;
 
@@ -13,13 +13,21 @@
     }
   }
 
+  .redesA {
+    color: white !important;
+  }
+  .redesA:hover {
+    color: #bf9bde !important;
+    border-color: #bf9bde !important;
+  }
+
   .redes {
     height: 200px;
     width: 100px;
 
-    svg {
-      color: white !important;
-    }
+    
+  
+    
   }
 
   button {
@@ -49,5 +57,46 @@
 
   button:active {
     transform: scale(0.9);
+  }
+}
+
+
+
+@media (max-width: 767.98px) { 
+
+  #home{
+
+
+    h1 {
+
+      font-size: 3rem;
+
+
+    }
+
+    .redes {
+
+      display: none !important;
+
+    }
+
+    .redesA {display: none !important}
+
+
+
+
+
+  button {
+    font-size: small;
+    width: 100px;
+    padding: 10px;
+  }
+
+
+
+
+
+
+
   }
 }

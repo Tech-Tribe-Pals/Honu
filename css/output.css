@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Jost&family=Montserrat:wght@100;400;600&family=Nunito+Sans&family=Roboto:wght@400;500;700&display=swap");
 header .navbar {
   background-color: transparent !important;
-}
-header .navbar a {
-  font-weight: 100 !important;
+  font-family: "Edu NSW ACT Foundation", cursive !important;
+  font-family: "Kanit", sans-serif !important;
 }
 header .menu {
   height: 60px;
@@ -16,18 +14,19 @@ header .hamburguesa {
 }
 header .hamburguesa:hover {
   color: #bf9bde;
-  transition: ease-in 0.5s;
-}
-header .links-nav:hover {
-  color: #bf9bde !important;
-  transition: ease-in 0.5s !important;
-}
-header .ul-links {
-  margin-bottom: 10rem !important;
 }
 
+.logo {
+  text-decoration: none !important;
+}
+
+@media (max-width: 767.98px) {
+  .logo {
+    display: none;
+  }
+}
 #home {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("/img/imagen-home.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/img/imagen-home.jpg");
   background-size: cover;
 }
 #home h1 {
@@ -39,12 +38,16 @@ header .ul-links {
 #home h1 strong {
   color: white !important;
 }
+#home .redesA {
+  color: white !important;
+}
+#home .redesA:hover {
+  color: #bf9bde !important;
+  border-color: #bf9bde !important;
+}
 #home .redes {
   height: 200px;
   width: 100px;
-}
-#home .redes svg {
-  color: white !important;
 }
 #home button {
   left: 1rem;
@@ -73,11 +76,25 @@ header .ul-links {
   transform: scale(0.9);
 }
 
+@media (max-width: 767.98px) {
+  #home h1 {
+    font-size: 3rem;
+  }
+  #home .redes {
+    display: none !important;
+  }
+  #home .redesA {
+    display: none !important;
+  }
+  #home button {
+    font-size: small;
+    width: 100px;
+    padding: 10px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
-  font-family: "Edu NSW ACT Foundation", cursive;
-  font-family: "Kanit", sans-serif;
 }
 
 section {
@@ -85,19 +102,66 @@ section {
   width: 100%;
 }
 
+.separacion {
+  height: 10vh;
+  background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 767.98px) {
+  .separacion {
+    display: none;
+  }
+}
+#tortuga {
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/img/Fondo-Tortuga-PC.png") center no-repeat;
+  background-size: cover;
+}
 #tortuga p {
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 0.5px;
-  color: transparent !important;
+  font-size: 1.8rem;
+  margin-right: 35% !important;
+  font-weight: 100;
 }
 #tortuga p strong {
   color: white !important;
+  font-weight: bold;
 }
 #tortuga img {
   top: 18%;
   right: 10%;
 }
 
+.slider {
+  width: 100%;
+  font-size: 25px;
+  animation: efecto 11s infinite linear;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767.98px) {
+  #tortuga {
+    overflow: hidden;
+    justify-content: center !important;
+    align-items: flex-start !important;
+  }
+  #tortuga img {
+    z-index: 0;
+    width: 350px;
+    top: 55%;
+    right: -14%;
+  }
+  #tortuga p {
+    padding: 3rem;
+    font-size: 2.4rem !important;
+    margin: 0% !important;
+    width: 100%;
+    z-index: 1;
+    margin-top: 4rem !important;
+  }
+  #tortuga p br {
+    display: none;
+  }
+}
 #contacto img {
   object-fit: cover;
 }
@@ -128,19 +192,41 @@ section {
   transform: scale(0.9);
 }
 
-#footer {
-  background-color: #0c0c0c !important;
+@media (max-width: 767.98px) {
+  #about {
+    align-items: flex-end !important;
+  }
+  #about article {
+    width: 100% !important;
+    z-index: 1;
+  }
+  #about article h2 {
+    width: 82% !important;
+    font-size: 2.5rem;
+  }
+  #about article p {
+    margin-top: 1.8rem;
+    font-size: 2.1rem !important;
+  }
+  #about img {
+    height: 100% !important;
+    width: 100% !important;
+    z-index: 0;
+    filter: brightness(50%);
+  }
+}
+#footer svg {
+  color: white !important;
 }
 #footer svg:hover {
   color: #bf9bde !important;
-  transition: ease-in 0.5s !important;
 }
-#footer .tribepals {
-  color: whitesmoke;
+#footer a {
+  color: white;
+  text-decoration: none;
 }
-#footer .tribepals:hover {
-  color: #bf9bde !important;
-  transition: ease-in 0.5s !important;
+#footer a:hover {
+  color: #bf9bde;
 }
 
 /*# sourceMappingURL=output.css.map */
