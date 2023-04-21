@@ -1,30 +1,70 @@
-
-
 #tortuga {
-    p {
-        -webkit-text-stroke-color: white;
-        -webkit-text-stroke-width: 0.5px;
-        color: transparent !important;
-        
-        
-        
-        strong {
-          color: white !important;
-        
-        }
-    
-        }
-    
-    
-    
-        img {
+  overflow:hidden;
+  background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/img/Fondo-Tortuga-PC.png") center no-repeat;
+  background-size: cover;
 
-        top: 18%;
-        right: 10%;
+  p {
+
+    font-size:1.8rem;
+    
+    margin-right: 35% !important;
+    font-weight: 100;
+
+    strong {
+      color: white !important;
+      font-weight: bold;
+    }
+  }
+
+  img {
+    top: 18%;
+    right: 10%;
+  }
+}
 
 
+
+
+.slider {width: calc(100%*1);
+  font-size: 25px;
+  animation: efecto 11s infinite linear;
+
+
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767.98px) {
+  #tortuga {
+    overflow: hidden;
+    justify-content: center !important;
+    align-items: flex-start !important;
+
+    img {
+      z-index: 0;
+      width: 350px;
+      top: 55%;
+      right: -14%;
     }
 
+    p {padding: 3rem;
+      font-size: 2.4rem !important;
+      margin: 0% !important;
+      width: 100%;
+      z-index: 1;
+      margin-top: 4rem !important;
 
 
+      br {display: none;}
+
+    }
+  }
 }

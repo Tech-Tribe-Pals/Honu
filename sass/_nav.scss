@@ -1,9 +1,8 @@
 header {
   .navbar {
     background-color: transparent !important;
-    a {
-      font-weight: 100 !important;
-    }
+    font-family: "Edu NSW ACT Foundation", cursive !important;
+    font-family: "Kanit", sans-serif !important;
   }
 
   .menu {
@@ -19,15 +18,20 @@ header {
 
   .hamburguesa:hover {
     color: #bf9bde;
-    transition: ease-in (0.5s);
+  }
+}
+
+.logo{text-decoration: none !important;}
+
+
+@media (max-width: 767.98px) {
+
+  .logo {
+    
+    display: none;
+
   }
 
-  .links-nav:hover {
-    color: #bf9bde !important;
-    transition: ease-in (0.5s) !important;
-  }
 
-  .ul-links {
-    margin-bottom: 10rem !important;
-  }
+
 }
