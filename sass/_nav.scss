@@ -1,0 +1,33 @@
+header {
+  .navbar {
+    background-color: transparent !important;
+    a {
+      font-weight: 100 !important;
+    }
+  }
+
+  .menu {
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .hamburguesa {
+    color: white;
+  }
+
+  .hamburguesa:hover {
+    color: #bf9bde;
+    transition: ease-in (0.5s);
+  }
+
+  .links-nav:hover {
+    color: #bf9bde !important;
+    transition: ease-in (0.5s) !important;
+  }
+
+  .ul-links {
+    margin-bottom: 10rem !important;
+  }
+}

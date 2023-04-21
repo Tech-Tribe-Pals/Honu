@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Jost&family=Montserrat:wght@100;400;600&family=Nunito+Sans&family=Roboto:wght@400;500;700&display=swap");
+header .navbar {
+  background-color: transparent !important;
+}
+header .navbar a {
+  font-weight: 100 !important;
+}
+header .menu {
+  height: 60px;
+  width: 60px;
+  background-color: transparent;
+  border: none;
+}
+header .hamburguesa {
+  color: white;
+}
+header .hamburguesa:hover {
+  color: #bf9bde;
+  transition: ease-in 0.5s;
+}
+header .links-nav:hover {
+  color: #bf9bde !important;
+  transition: ease-in 0.5s !important;
+}
+header .ul-links {
+  margin-bottom: 10rem !important;
+}
+
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("/img/imagen-home.jpg");
+  background-size: cover;
+}
+#home h1 {
+  font-size: 4rem;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.5px;
+  color: transparent !important;
+}
+#home h1 strong {
+  color: white !important;
+}
+#home .redes {
+  height: 200px;
+  width: 100px;
+}
+#home .redes svg {
+  color: white !important;
+}
+#home button {
+  left: 1rem;
+  text-transform: uppercase;
+  width: 175px;
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #bf9bde;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #bf9bde;
+  box-shadow: inset 0 0 0 0 #725ac1;
+}
+#home button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #bf9bde;
+}
+#home button:active {
+  transform: scale(0.9);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "Kanit", sans-serif;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+#tortuga p {
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.5px;
+  color: transparent !important;
+}
+#tortuga p strong {
+  color: white !important;
+}
+#tortuga img {
+  top: 18%;
+  right: 10%;
+}
+
+#contacto img {
+  object-fit: cover;
+}
+#contacto .btn-contact {
+  left: 1rem;
+  text-transform: uppercase;
+  width: 175px;
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #bf9bde;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #bf9bde;
+  box-shadow: inset 0 0 0 0 #725ac1;
+}
+#contacto .btn-contact:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #bf9bde;
+}
+#contacto .btn-contact:active {
+  transform: scale(0.9);
+}
+
+#footer {
+  background-color: #0c0c0c !important;
+}
+#footer svg:hover {
+  color: #bf9bde !important;
+  transition: ease-in 0.5s !important;
+}
+#footer .tribepals {
+  color: whitesmoke;
+}
+#footer .tribepals:hover {
+  color: #bf9bde !important;
+  transition: ease-in 0.5s !important;
+}
+
+/*# sourceMappingURL=output.css.map */

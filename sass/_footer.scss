@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Jost&family=Montserrat:wght@100;400;600&family=Nunito+Sans&family=Roboto:wght@400;500;700&display=swap");
+
+#footer {
+  background-color: #0c0c0c !important;
+
+  svg:hover {
+    color: #bf9bde !important;
+    transition: ease-in (0.5s) !important;
+  }
+
+  .tribepals {
+    color: whitesmoke;
+  }
+
+  .tribepals:hover {
+    color: #bf9bde !important;
+    transition: ease-in (0.5s) !important;
+  }
+}

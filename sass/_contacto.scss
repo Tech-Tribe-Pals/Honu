@@ -1,0 +1,50 @@
+
+
+
+#contacto {
+    img {
+    object-fit: cover;
+}
+
+
+.btn-contact {
+    left: 1rem;
+    text-transform: uppercase;
+    width: 175px;
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #bf9bde;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #bf9bde;
+    box-shadow: inset 0 0 0 0 #725ac1;
+  }
+
+  .btn-contact:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #bf9bde;
+  }
+
+  .btn-contact:active {
+    transform: scale(0.9);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}
