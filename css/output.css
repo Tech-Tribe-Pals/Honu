@@ -14,6 +14,11 @@ header .hamburguesa {
 }
 header .hamburguesa:hover {
   color: #bf9bde;
+  transition: ease-in-out 0.6s;
+}
+header .links-nav a:hover {
+  color: #bf9bde !important;
+  transition: ease-in-out 0.6s;
 }
 
 .logo {
@@ -26,11 +31,12 @@ header .hamburguesa:hover {
   }
 }
 #home {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/img/imagen-home.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("/img/imagen-home.jpg");
   background-size: cover;
 }
 #home h1 {
   font-size: 4rem;
+  margin-right: 10rem;
   -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 0.5px;
   color: transparent !important;
@@ -38,12 +44,16 @@ header .hamburguesa:hover {
 #home h1 strong {
   color: white !important;
 }
+#home .icon-header {
+  font-size: 3rem;
+}
 #home .redesA {
   color: white !important;
 }
 #home .redesA:hover {
   color: #bf9bde !important;
   border-color: #bf9bde !important;
+  transition: ease-in-out 0.5s;
 }
 #home .redes {
   height: 200px;
@@ -164,6 +174,7 @@ section {
 }
 #contacto img {
   object-fit: cover;
+  right: 1rem;
 }
 #contacto .btn-contact {
   left: 1rem;
@@ -190,6 +201,16 @@ section {
 }
 #contacto .btn-contact:active {
   transform: scale(0.9);
+}
+#contacto .modal-main {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+#contacto .btn-close {
+  background-color: white;
+}
+
+.img-about {
+  left: 2rem !important;
 }
 
 @media (max-width: 767.98px) {
@@ -220,6 +241,7 @@ section {
 }
 #footer svg:hover {
   color: #bf9bde !important;
+  transition: ease-in-out 0.5s;
 }
 #footer a {
   color: white;
@@ -227,6 +249,7 @@ section {
 }
 #footer a:hover {
   color: #bf9bde;
+  transition: ease-in-out 0.5s;
 }
 
 /*# sourceMappingURL=output.css.map */

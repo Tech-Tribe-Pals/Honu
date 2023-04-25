@@ -18,20 +18,21 @@ header {
 
   .hamburguesa:hover {
     color: #bf9bde;
+    transition: ease-in-out (0.6s);
+  }
+
+  .links-nav a:hover {
+    color: #bf9bde !important;
+    transition: ease-in-out (0.6s);
   }
 }
 
-.logo{text-decoration: none !important;}
-
+.logo {
+  text-decoration: none !important;
+}
 
 @media (max-width: 767.98px) {
-
   .logo {
-    
     display: none;
-
   }
-
-
-
 }

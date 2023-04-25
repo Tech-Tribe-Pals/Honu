@@ -1,10 +1,11 @@
 #home {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
     url("/img/imagen-home.jpg");
   background-size: cover;
 
   h1 {
     font-size: 4rem;
+    margin-right: 10rem;
     -webkit-text-stroke-color: white;
     -webkit-text-stroke-width: 0.5px;
     color: transparent !important;
@@ -13,21 +14,21 @@
     }
   }
 
+  .icon-header {
+    font-size: 3rem;
+  }
   .redesA {
     color: white !important;
   }
   .redesA:hover {
     color: #bf9bde !important;
     border-color: #bf9bde !important;
+    transition: ease-in-out (0.5s);
   }
 
   .redes {
     height: 200px;
     width: 100px;
-
-    
-  
-    
   }
 
   button {
@@ -60,43 +61,24 @@
   }
 }
 
-
-
-@media (max-width: 767.98px) { 
-
-  #home{
-
-
+@media (max-width: 767.98px) {
+  #home {
     h1 {
-
       font-size: 3rem;
-
-
     }
 
     .redes {
-
       display: none !important;
-
     }
 
-    .redesA {display: none !important}
+    .redesA {
+      display: none !important;
+    }
 
-
-
-
-
-  button {
-    font-size: small;
-    width: 100px;
-    padding: 10px;
-  }
-
-
-
-
-
-
-
+    button {
+      font-size: small;
+      width: 100px;
+      padding: 10px;
+    }
   }
 }

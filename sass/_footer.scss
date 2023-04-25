@@ -4,6 +4,7 @@
   }
   svg:hover {
     color: #bf9bde !important;
+    transition: ease-in-out (0.5s);
   }
   a {
     color: white;
@@ -12,6 +13,6 @@
 
   a:hover {
     color: #bf9bde;
+    transition: ease-in-out (0.5s);
   }
 }
-

@@ -1,13 +1,10 @@
-
-
-
 #contacto {
-    img {
+  img {
     object-fit: cover;
-}
+    right: 1rem;
+  }
 
-
-.btn-contact {
+  .btn-contact {
     left: 1rem;
     text-transform: uppercase;
     width: 175px;
@@ -36,15 +33,10 @@
     transform: scale(0.9);
   }
 
-
-
-
-
-
-
-
-
-
-
-
+  .modal-main {
+    background-color: #0003 !important;
+  }
+  .btn-close {
+    background-color: white;
+  }
 }
