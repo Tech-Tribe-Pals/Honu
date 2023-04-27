@@ -1,0 +1,20 @@
+#loading {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    color: #FFF;
+    z-index: 1200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        animation: backflip infinite 2s;
+    }
+    @keyframes backflip {
+        0% { transform: translateY(1%); }
+        50% { transform: translateY(-2%); }
+        100% { transform: translateY(1%); }
+    }
+}

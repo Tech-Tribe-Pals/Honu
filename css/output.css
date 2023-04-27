@@ -31,7 +31,7 @@ header .links-nav a:hover {
   }
 }
 #home {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("/img/imagen-home.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/imagen-home.jpg");
   background-size: cover;
 }
 #home h1 {
@@ -172,6 +172,37 @@ section {
     display: none;
   }
 }
+#tik-tok {
+  position: relative;
+}
+#tik-tok .card {
+  border-radius: 20px;
+}
+#tik-tok video {
+  width: 320px;
+  padding: 2px;
+  height: auto;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  border-radius: 20px;
+}
+#tik-tok .contador {
+  color: #fff;
+  display: flex;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+#tik-tok .contador div:nth-child(1) {
+  border-right: 2px solid #fff;
+}
+#tik-tok .contador div {
+  padding: 5px;
+}
+#tik-tok .contador div p {
+  margin: 0;
+}
+
 #contacto img {
   object-fit: cover;
   right: 1rem;
@@ -250,6 +281,34 @@ section {
 #footer a:hover {
   color: #bf9bde;
   transition: ease-in-out 0.5s;
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: #FFF;
+  z-index: 1200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loading img {
+  animation: backflip infinite 2s;
+}
+@keyframes backflip {
+  0% {
+    transform: translateY(1%);
+  }
+  50% {
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(1%);
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
