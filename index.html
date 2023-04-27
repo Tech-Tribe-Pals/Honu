@@ -48,13 +48,13 @@
           <div class="offcanvas-body bg-black d-flex flex-row align-items-center justify-content-center ">
             <ul class="navbar-nav justify-content-center text-center flex-grow-1 pe-3 links-nav">
               <li class="nav-item">
-                <a class="nav-link text-white fs-4 active" href="#about">Home</a>
+                <a class="nav-link text-white fs-4 active" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white fs-4" href="#">How we work</a>
+                <a class="nav-link text-white fs-4" href="#contacto">How we work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white fs-4" href="#">Contact</a>
+                <a class="nav-link text-white fs-4" href="#contacto">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white fs-4 " href="#about">About us</a>
@@ -69,6 +69,9 @@
 
   <main class="bg-black">
     <!-- SECCION HOME -->
+    <section id="loading">
+      <img src="./img/turtle.png" alt="backflip">
+    </section>
 
     <section id="home" class="bg-primary d-flex flex-column justify-content-center position-relative">
 
@@ -103,7 +106,7 @@
       </article>
 
 
-      <button class="position-absolute rounded-pill bottom-0">Contact</button>
+      <button onclick="transition()" class="contactBtn position-absolute rounded-pill bottom-0">Contact</button>
 
     </section>
 
@@ -135,7 +138,7 @@
     <section id="contacto"
       class="bg-black position-relative d-flex flex-row align-items-start align-items-center text-white ">
 
-      <img src="/img/imagen-contacto.png" class="position-absolute w-50 h-100 m-4 img-contact object-fit-cover" alt="img-contacto">
+      <img src="./img/imagen-contacto.png" class="position-absolute w-50 h-100 m-4 img-contact object-fit-cover" alt="img-contacto">
       <article class=" w-50 text-center d-flex flex-column align-items-center">
         <h2 class=" w-50 border-bottom border-white border-4">How we work</h2>
         <p class="fs-5 w-50 m-2">Firstly, we get acquainted with your goals in order to choose the influencers team that
@@ -257,7 +260,7 @@
 
     <script src="https://kit.fontawesome.com/3d72b0d6bf.js" crossorigin="anonymous"></script>
 
-
+<script src="index.js"></script>
 
 </body>
 

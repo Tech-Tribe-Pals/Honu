@@ -1,2 +1,34 @@
-
-
+#tik-tok {
+  position: relative;
+  .card {
+    border-radius: 20px;
+  }
+  video {
+    width: 320px;
+    padding: 2px;
+    height: auto;
+    background-image: linear-gradient(
+      180deg,
+      rgb(0, 183, 255),
+      rgb(255, 48, 255)
+    );
+    height: 130%;
+    border-radius: 20px;
+  }
+  .contador {
+    color: #fff;
+    display: flex;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    div:nth-child(1) {
+      border-right: 2px solid #fff;
+    }
+    div {
+      padding: 5px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
