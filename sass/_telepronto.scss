@@ -1,0 +1,23 @@
+.teleprompter-container {
+
+  overflow: hidden;
+  width: 10%;
+  height: 10%;
+}
+
+.message-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  animation: scroll-right 10s linear infinite;
+}
+
+@keyframes scroll-right {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}

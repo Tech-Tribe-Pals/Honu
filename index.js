@@ -3,6 +3,7 @@ const loading = document.getElementById("loading");
 const tiktok = document.getElementById("tik-tok");
 let count = 0;
 let countDown = 0;
+let change = true;
 
 const tiktokContent = [
   {
@@ -22,39 +23,25 @@ const tiktokContent = [
   },
 ];
 
+const scrollToContacto = () => {
+  document.getElementById('contacto').scrollIntoView()
+};
+
 const transition = () => {
-  setTimeout(() => {
-    window.scrollBy(0, 50);
-  }, 500);
-  setTimeout(() => {
-    window.scrollBy(0, 120);
-  }, 1000);
-  setTimeout(() => {
-    window.scrollBy(0, 200);
-  }, 1500);
-  setTimeout(() => {
-    window.scrollBy(0, 400);
-  }, 2000);
-  setTimeout(() => {
-    window.scrollTo({
-      top: 978 * 2,
-      behavior: "smooth",
-    });
-  }, 3000);
+  scrollToContacto()
 };
 
 const load = () => {
-  console.log("Cargando");
   document.body.style.overflow = "hidden";
   setTimeout(() => {
     loading.innerHTML = "";
     loading.style.display = "none";
     document.body.style = "";
     carousel(0);
-  }, 4000);
+  }, 500);
 };
 
-const carousel = (e) => {
+const carousel = (e, click = false) => {
   count = e;
   countDown = 0;
   const card = document.createElement("div");
@@ -67,9 +54,9 @@ const carousel = (e) => {
     <video loop autoplay muted src=${tiktokContent[e].video}>
     `;
 
-    const intervalId = setInterval(() => {
-        countDown++;
-        contador.innerHTML = `
+  const intervalId = setInterval(() => {
+    countDown++;
+    contador.innerHTML = `
         <div class="likes">
         <p>${countDown}K</p>
         <p>likes</p>
@@ -79,12 +66,12 @@ const carousel = (e) => {
         <p>views</p>
         </div>
         `;
-        if (countDown === tiktokContent[e].likes) clearInterval(intervalId);
-      }, 20);
+    if (countDown >= tiktokContent[e].likes) clearInterval(intervalId);
+  }, 20);
 
   tiktokContent.forEach((e, i) => {
     controlers.innerHTML += `
-    <button onclick="carousel(${i})">o</button>
+    <button onclick="carousel(${i}, true)">o</button>
     `;
   });
   tiktok.appendChild(contador);
@@ -97,9 +84,17 @@ const carousel = (e) => {
     count++;
   }
 
-  setTimeout(() => {
-    carousel(count);
-  }, 5000);
+  if (change && !click) {
+    change = false;
+    setTimeout(() => {
+      change = true;
+      carousel(count);
+    }, 2500);
+  }
 };
+
+const message = ` we're honu`;
+const messageContainer = document.querySelector(".message-container");
+messageContainer.innerText = message.repeat(100);
 
 load();
