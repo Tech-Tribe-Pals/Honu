@@ -1,0 +1,56 @@
+.slider {
+  width: calc(100% * 1);
+  font-size: 25px;
+  animation: efecto 11s infinite linear;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+.teleprompter-container {
+  overflow: hidden;
+  width: 10%;
+  height: 10%;
+}
+
+.message-container {
+  color: #4a706e;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  animation: scroll-right 20s linear infinite;
+  strong {
+    -webkit-text-stroke-color: #035a54 !important;
+    -webkit-text-stroke-width: 0.5px !important;
+    color: transparent !important;
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+teleprompter-containerr {
+  overflow: hidden;
+  width: 10%;
+  height: 10%;
+}
+
+.message-containerDos {
+  color: #4a706e;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  animation: scroll-right 20s linear infinite;
+
+  strong {
+    -webkit-text-stroke-color: #4a706e;
+    -webkit-text-stroke-width: 0.5px;
+    color: transparent !important;
+  }
+}

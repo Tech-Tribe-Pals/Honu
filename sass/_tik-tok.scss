@@ -1,26 +1,66 @@
 #tik-tok {
+  background: rgba(255, 255, 255, 1);
   position: relative;
+
+  .btn {
+    background-color: #000000 !important;
+  }
+
   .card {
     border-radius: 20px;
+    margin-right: 7rem;
+    flex: 0 0 40%;
+    border: none;
+    background-color: transparent;
   }
+
+  .btn-tiktok {
+    z-index: 3;
+    align-self: center !important;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    gap: 0.5rem;
+  }
+
+  .texto {
+    text-align: center;
+    flex: 0 0 40%;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    p {
+      width: 50%;
+    }
+    z-index: 3;
+    font-weight: bold;
+  }
+
   video {
-    width: 320px;
-    padding: 2px;
+    -webkit-box-shadow: 0px 0px 43px 8px rgba(0, 183, 255, 1),
+      20px 14px 0px 0px rgba(255, 48, 255, 1);
+    -moz-box-shadow: 0px 0px 43px 8px rgba(0, 183, 255, 1),
+      20px 14px 0px 0px rgba(255, 48, 255, 1);
+    box-shadow: 0px 0px 43px 8px rgba(0, 183, 255, 1),
+      20px 14px 0px 0px rgba(255, 48, 255, 1);
+    align-self: flex-end;
+    width: 280px;
+    padding: 3px;
     height: auto;
-    background-image: linear-gradient(
-      180deg,
-      rgb(0, 183, 255),
-      rgb(255, 48, 255)
-    );
-    height: 130%;
+    background-image: linear-gradient(180deg, #00b7ff, #ff30ff);
+    object-fit: cover;
+    height: 500px;
     border-radius: 20px;
   }
   .contador {
-    color: #fff;
+    z-index: 3;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000000;
     display: flex;
     position: absolute;
-    left: 20px;
-    bottom: 20px;
+    left: 9%;
+    bottom: 50px;
     div:nth-child(1) {
       border-right: 2px solid #fff;
     }
@@ -28,6 +68,61 @@
       padding: 5px;
       p {
         margin: 0;
+      }
+    }
+  }
+}
+.texto {
+  color: black;
+}
+
+@media (max-width: 767.98px) {
+  #tik-tok {
+    flex-direction: column !important;
+    justify-content: flex-end !important ;
+
+    .card {
+      height: 100% !important;
+      position: absolute !important;
+      width: 100% !important;
+      left: 0%;
+      z-index: 1;
+    }
+
+    video {
+      height: 100% !important;
+      width: 100% !important;
+      filter: brightness(67%);
+      box-shadow: none;
+    }
+
+    .contador {
+      font-size: 1.7rem;
+      top: 10%;
+      left: 32%;
+      color: white !important;
+
+      div:nth-child(1) {
+        border: none;
+      }
+    }
+
+    .texto {
+      margin-bottom: 9rem !important;
+      width: 100% !important;
+      justify-content: center;
+      p {
+        font-size: 1.5rem;
+        color: #ffffff !important;
+        width: 80% !important;
+      }
+    }
+
+    .btn-tiktok {
+      margin-bottom: 0.5rem;
+      width: 95%;
+      .btn {
+        background-color: #ffffff !important;
       }
     }
   }

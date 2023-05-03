@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 header .navbar {
   background-color: transparent !important;
   font-family: "Edu NSW ACT Foundation", cursive !important;
@@ -9,30 +10,38 @@ header .menu {
   background-color: transparent;
   border: none;
 }
+header .insig-main {
+  color: #07b8ac !important;
+  text-decoration: none;
+}
 header .hamburguesa {
-  color: white;
+  color: #07b8ac !important;
 }
 header .hamburguesa:hover {
-  color: #bf9bde;
+  color: #057c74;
   transition: ease-in-out 0.6s;
 }
 header .links-nav a:hover {
-  color: #bf9bde !important;
+  color: #035A54 !important;
   transition: ease-in-out 0.6s;
 }
 
-.logo {
+.insig-main {
   text-decoration: none !important;
 }
 
 @media (max-width: 767.98px) {
-  .logo {
+  .insig-main {
     display: none;
   }
 }
 #home {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/imagen-home.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/imagen-home.jpeg");
   background-size: cover;
+  background-attachment: fixed;
+}
+#home article {
+  flex-direction: row !important;
 }
 #home h1 {
   font-size: 4rem;
@@ -51,8 +60,9 @@ header .links-nav a:hover {
   color: white !important;
 }
 #home .redesA:hover {
-  color: #bf9bde !important;
-  border-color: #bf9bde !important;
+  transform: scale(1.3);
+  color: #035a54 !important;
+  border-color: #035a54 !important;
   transition: ease-in-out 0.5s;
 }
 #home .redes {
@@ -61,6 +71,7 @@ header .links-nav a:hover {
 }
 #home button {
   left: 1rem;
+  bottom: 0.5rem !important;
   text-transform: uppercase;
   width: 175px;
   position: relative;
@@ -71,24 +82,42 @@ header .links-nav a:hover {
   font-size: 18px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #bf9bde;
+  color: #035a54;
   background: transparent;
   cursor: pointer;
   transition: ease-out 0.5s;
-  border: 2px solid #bf9bde;
-  box-shadow: inset 0 0 0 0 #725ac1;
+  border: 2px solid #035a54;
+  box-shadow: inset 0 0 0 0 #035a54;
 }
 #home button:hover {
   color: white;
-  box-shadow: inset 0 -100px 0 0 #bf9bde;
+  box-shadow: inset 0 -100px 0 0 #035a54;
 }
 #home button:active {
   transform: scale(0.9);
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 1000px) {
+  #home {
+    display: flex;
+    flex-direction: column;
+    text-align: center !important;
+  }
+  #home article h1 {
+    align-self: center !important;
+  }
+  #home article .links-redes {
+    display: none !important;
+  }
+}
+@media (max-width: 512px) {
+  #home article {
+    justify-content: center !important;
+  }
   #home h1 {
     font-size: 3rem;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
   }
   #home .redes {
     display: none !important;
@@ -105,6 +134,7 @@ header .links-nav a:hover {
 * {
   margin: 0;
   padding: 0;
+  font-family: "Kanit", sans-serif !important;
 }
 
 section {
@@ -113,8 +143,8 @@ section {
 }
 
 .separacion {
-  height: 10vh;
-  background-color: rgb(0, 0, 0);
+  height: 2rem;
+  background-color: rgb(255, 255, 255);
 }
 
 @media (max-width: 767.98px) {
@@ -124,28 +154,20 @@ section {
 }
 #tortuga {
   overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/img/Fondo-Tortuga-PC.png") center no-repeat;
-  background-size: cover;
+  background: rgb(3, 90, 84);
+  background: linear-gradient(180deg, rgb(3, 90, 84) 0%, rgb(255, 255, 255) 100%);
 }
-#tortuga p {
+#tortuga .texto-tortuga {
   font-size: 1.8rem;
   margin-right: 35% !important;
   font-weight: 100;
+  z-index: 2;
 }
-#tortuga p strong {
-  color: white !important;
-  font-weight: bold;
-}
-#tortuga img {
-  top: 18%;
-  right: 10%;
-}
-
-.slider {
-  width: 100%;
-  font-size: 25px;
-  animation: efecto 11s infinite linear;
-  text-transform: uppercase;
+#tortuga .tortuga {
+  filter: invert(27%) sepia(18%) saturate(5477%) hue-rotate(159deg) brightness(40%) contrast(101%);
+  top: 28%;
+  right: 16%;
+  z-index: 1;
 }
 
 @media (max-width: 767.98px) {
@@ -154,11 +176,17 @@ section {
     justify-content: center !important;
     align-items: flex-start !important;
   }
-  #tortuga img {
+  #tortuga .tortuga {
     z-index: 0;
-    width: 350px;
-    top: 55%;
-    right: -14%;
+    width: 250px;
+    top: 60%;
+    right: -10%;
+  }
+  #tortuga .texto-tortuga {
+    margin-right: 0% !important;
+  }
+  #tortuga .linea {
+    bottom: -5% !important;
   }
   #tortuga p {
     padding: 3rem;
@@ -167,31 +195,68 @@ section {
     width: 100%;
     z-index: 1;
     margin-top: 4rem !important;
+    margin-right: 0% !important;
   }
   #tortuga p br {
     display: none;
   }
 }
 #tik-tok {
+  background: rgb(255, 255, 255);
   position: relative;
+}
+#tik-tok .btn {
+  background-color: #000000 !important;
 }
 #tik-tok .card {
   border-radius: 20px;
+  margin-right: 7rem;
+  flex: 0 0 40%;
+  border: none;
+  background-color: transparent;
+}
+#tik-tok .btn-tiktok {
+  z-index: 3;
+  align-self: center !important;
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  gap: 0.5rem;
+}
+#tik-tok .texto {
+  text-align: center;
+  flex: 0 0 40%;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  z-index: 3;
+  font-weight: bold;
+}
+#tik-tok .texto p {
+  width: 50%;
 }
 #tik-tok video {
-  width: 320px;
-  padding: 2px;
+  -webkit-box-shadow: 0px 0px 43px 8px rgb(0, 183, 255), 20px 14px 0px 0px rgb(255, 48, 255);
+  -moz-box-shadow: 0px 0px 43px 8px rgb(0, 183, 255), 20px 14px 0px 0px rgb(255, 48, 255);
+  box-shadow: 0px 0px 43px 8px rgb(0, 183, 255), 20px 14px 0px 0px rgb(255, 48, 255);
+  align-self: flex-end;
+  width: 280px;
+  padding: 3px;
   height: auto;
-  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
-  height: 130%;
+  background-image: linear-gradient(180deg, #00b7ff, #ff30ff);
+  object-fit: cover;
+  height: 500px;
   border-radius: 20px;
 }
 #tik-tok .contador {
-  color: #fff;
+  z-index: 3;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000000;
   display: flex;
   position: absolute;
-  left: 20px;
-  bottom: 20px;
+  left: 9%;
+  bottom: 50px;
 }
 #tik-tok .contador div:nth-child(1) {
   border-right: 2px solid #fff;
@@ -203,9 +268,73 @@ section {
   margin: 0;
 }
 
+.texto {
+  color: black;
+}
+
+@media (max-width: 767.98px) {
+  #tik-tok {
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+  }
+  #tik-tok .card {
+    height: 100% !important;
+    position: absolute !important;
+    width: 100% !important;
+    left: 0%;
+    z-index: 1;
+  }
+  #tik-tok video {
+    height: 100% !important;
+    width: 100% !important;
+    filter: brightness(67%);
+    box-shadow: none;
+  }
+  #tik-tok .contador {
+    font-size: 1.7rem;
+    top: 10%;
+    left: 32%;
+    color: white !important;
+  }
+  #tik-tok .contador div:nth-child(1) {
+    border: none;
+  }
+  #tik-tok .texto {
+    margin-bottom: 9rem !important;
+    width: 100% !important;
+    justify-content: center;
+  }
+  #tik-tok .texto p {
+    font-size: 1.5rem;
+    color: #ffffff !important;
+    width: 80% !important;
+  }
+  #tik-tok .btn-tiktok {
+    margin-bottom: 0.5rem;
+    width: 95%;
+  }
+  #tik-tok .btn-tiktok .btn {
+    background-color: #ffffff !important;
+  }
+}
+#contacto .mensaje {
+  resize: none;
+}
 #contacto img {
   object-fit: cover;
-  right: 1rem;
+  height: 93%;
+  right: 2rem !important;
+}
+#contacto .modal-content {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  z-index: 1000 !important;
+}
+#contacto .boton-close {
+  background-color: transparent !important;
+  border: none !important;
+}
+#contacto .modal-header {
+  background-color: #035a54 !important;
 }
 #contacto .btn-contact {
   left: 1rem;
@@ -219,16 +348,16 @@ section {
   font-size: 18px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #bf9bde;
+  color: #035a54;
   background: transparent;
   cursor: pointer;
   transition: ease-out 0.5s;
-  border: 2px solid #bf9bde;
-  box-shadow: inset 0 0 0 0 #725ac1;
+  border: 2px solid #035a54;
+  box-shadow: inset 0 0 0 0 #035a54;
 }
 #contacto .btn-contact:hover {
   color: white;
-  box-shadow: inset 0 -100px 0 0 #bf9bde;
+  box-shadow: inset 0 -100px 0 0 #035a54;
 }
 #contacto .btn-contact:active {
   transform: scale(0.9);
@@ -240,46 +369,83 @@ section {
   background-color: white;
 }
 
+@media (max-width: 767.98px) {
+  #contacto {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("/img/imagen-contacto.jpeg") center;
+    background-size: cover;
+  }
+  #contacto img {
+    display: none;
+  }
+  #contacto article {
+    width: 100% !important;
+    color: white !important;
+  }
+  #contacto article h2 {
+    width: 80% !important;
+    color: white;
+    font-size: 2.5rem;
+  }
+  #contacto article p {
+    font-size: 1.8rem !important;
+    width: 70% !important;
+  }
+  #contacto article .btn-contact {
+    margin-top: 2px !important;
+    padding: 12px !important;
+  }
+  .modal-content {
+    color: black;
+    z-index: 1000 !important;
+  }
+}
 .img-about {
   left: 2rem !important;
 }
 
 @media (max-width: 767.98px) {
   #about {
-    align-items: flex-end !important;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("/img/imagen-about.jpeg") center;
+    background-size: cover;
+    align-items: center !important;
   }
   #about article {
+    color: white !important;
     width: 100% !important;
-    z-index: 1;
   }
   #about article h2 {
     width: 82% !important;
     font-size: 2.5rem;
   }
   #about article p {
-    margin-top: 1.8rem;
-    font-size: 2.1rem !important;
+    margin-top: 1.7rem;
+    font-size: 1.8rem !important;
   }
   #about img {
-    height: 100% !important;
-    width: 100% !important;
-    z-index: 0;
-    filter: brightness(50%);
+    display: none !important;
   }
 }
+#footer {
+  background-color: #D9D9D9 !important;
+}
+#footer h6 {
+  text-align: center;
+}
 #footer svg {
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
 }
 #footer svg:hover {
-  color: #bf9bde !important;
+  transform: scale(1.3);
+  color: #035A54 !important;
   transition: ease-in-out 0.5s;
 }
 #footer a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 #footer a:hover {
-  color: #bf9bde;
+  color: #035A54;
   transition: ease-in-out 0.5s;
 }
 
@@ -290,7 +456,7 @@ section {
   width: 100vw;
   height: 100vh;
   background-color: #000;
-  color: #FFF;
+  color: #fff;
   z-index: 1200;
   display: flex;
   justify-content: center;
@@ -298,6 +464,8 @@ section {
 }
 #loading img {
   animation: backflip infinite 2s;
+  filter: invert(27%) sepia(18%) saturate(5477%) hue-rotate(159deg) brightness(40%) contrast(101%);
+  top: 28%;
 }
 @keyframes backflip {
   0% {
@@ -309,6 +477,62 @@ section {
   100% {
     transform: translateY(1%);
   }
+}
+
+.slider {
+  width: 100%;
+  font-size: 25px;
+  animation: efecto 11s infinite linear;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.teleprompter-container {
+  overflow: hidden;
+  width: 10%;
+  height: 10%;
+}
+
+.message-container {
+  color: #4a706e;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  animation: scroll-right 20s linear infinite;
+}
+.message-container strong {
+  -webkit-text-stroke-color: #035a54 !important;
+  -webkit-text-stroke-width: 0.5px !important;
+  color: transparent !important;
+}
+
+@keyframes scroll-right {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+teleprompter-containerr {
+  overflow: hidden;
+  width: 10%;
+  height: 10%;
+}
+
+.message-containerDos {
+  color: #4a706e;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  animation: scroll-right 20s linear infinite;
+}
+.message-containerDos strong {
+  -webkit-text-stroke-color: #4a706e;
+  -webkit-text-stroke-width: 0.5px;
+  color: transparent !important;
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -3,73 +3,61 @@ const loading = document.getElementById("loading");
 const tiktok = document.getElementById("tik-tok");
 let count = 0;
 let countDown = 0;
+let change = true;
 
 const tiktokContent = [
   {
-    video: `./img/video1.mp4`,
+    video: `./img/video1_.mp4`,
     likes: 154,
     views: 313,
   },
   {
-    video: `./img/video2.mp4`,
+    video: `./img/video2_.mp4`,
     likes: 178,
     views: 700,
   },
   {
-    video: `./img/video3.mp4`,
+    video: `./img/video3_.mp4`,
     likes: 166,
     views: 600,
   },
 ];
 
+const scrollToContacto = () => {
+  document.getElementById("contacto").scrollIntoView();
+};
+
 const transition = () => {
-  setTimeout(() => {
-    window.scrollBy(0, 50);
-  }, 500);
-  setTimeout(() => {
-    window.scrollBy(0, 120);
-  }, 1000);
-  setTimeout(() => {
-    window.scrollBy(0, 200);
-  }, 1500);
-  setTimeout(() => {
-    window.scrollBy(0, 400);
-  }, 2000);
-  setTimeout(() => {
-    window.scrollTo({
-      top: 978 * 2,
-      behavior: "smooth",
-    });
-  }, 3000);
+  scrollToContacto();
 };
 
 const load = () => {
-  console.log("Cargando");
   document.body.style.overflow = "hidden";
   setTimeout(() => {
     loading.innerHTML = "";
     loading.style.display = "none";
     document.body.style = "";
     carousel(0);
-  }, 4000);
+  }, 0);
 };
 
-const carousel = (e) => {
+const carousel = (e, click = false) => {
   count = e;
   countDown = 0;
   const card = document.createElement("div");
   const contador = document.createElement("div");
   const controlers = document.createElement("div");
   card.className = "card";
+  controlers.className = "btn-tiktok";
   contador.className = "contador";
   tiktok.innerHTML = "";
   card.innerHTML = `
     <video loop autoplay muted src=${tiktokContent[e].video}>
     `;
 
-    const intervalId = setInterval(() => {
-        countDown++;
-        contador.innerHTML = `
+  const intervalId = setInterval(() => {
+    countDown++;
+    contador.innerHTML = `
         <div class="likes">
         <p>${countDown}K</p>
         <p>likes</p>
@@ -79,14 +67,20 @@ const carousel = (e) => {
         <p>views</p>
         </div>
         `;
-        if (countDown === tiktokContent[e].likes) clearInterval(intervalId);
-      }, 20);
+    if (countDown >= tiktokContent[e].likes) clearInterval(intervalId);
+  }, 20);
 
   tiktokContent.forEach((e, i) => {
     controlers.innerHTML += `
-    <button onclick="carousel(${i})">o</button>
+    <button class="rounded-pill w-100 btn" onclick="carousel(${i}, true)"></button>
     `;
   });
+
+  const texto = document.createElement("div");
+  texto.className = "texto";
+  texto.innerHTML = `<p>We represent +500 influencers on Tik Tok and Instagram from Chile, Mexico, Brazil, Bolivia, Colombia, Argentina and USA.</p>`;
+
+  tiktok.appendChild(texto);
   tiktok.appendChild(contador);
   tiktok.appendChild(card);
   tiktok.appendChild(controlers);
@@ -97,9 +91,20 @@ const carousel = (e) => {
     count++;
   }
 
-  setTimeout(() => {
-    carousel(count);
-  }, 5000);
+  if (change && !click) {
+    change = false;
+    setTimeout(() => {
+      change = true;
+      carousel(count);
+    }, 10000);
+  }
 };
 
+const message = ` WE'RE HONU`;
+const messageContainer = document.querySelector(".message-container");
+messageContainer.innerText = message.repeat(100);
+const messageDos = ` LET’S GET STARTED`;
+const messageContainerDos = document.querySelector(".message-containerDos");
+messageContainer.innerText = message.repeat(100);
 load();
+AOS.init();

@@ -1,20 +1,32 @@
 #loading {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #000;
-    color: #FFF;
-    z-index: 1200;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img {
-        animation: backflip infinite 2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  z-index: 1200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    animation: backflip infinite 2s;
+    filter: invert(27%) sepia(18%) saturate(5477%) hue-rotate(159deg)
+      brightness(40%) contrast(101%);
+    top: 28%;
+  }
+  @keyframes backflip {
+    0% {
+      transform: translateY(1%);
+    
     }
-    @keyframes backflip {
-        0% { transform: translateY(1%); }
-        50% { transform: translateY(-2%); }
-        100% { transform: translateY(1%); }
+    50% {
+      transform: translateY(-2%);
     }
+    100% {
+      transform: translateY(1%);
+    
+    }
+  }
 }

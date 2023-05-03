@@ -4,11 +4,16 @@
 
 @media (max-width: 767.98px) {
   #about {
-    align-items: flex-end !important;
+    overflow: hidden;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+      url("/img/imagen-about.jpeg") center;
+    background-size: cover;
+    align-items: center !important;
 
     article {
+      color: white !important;
       width: 100% !important;
-      z-index: 1;
 
       h2 {
         width: 82% !important;
@@ -16,15 +21,12 @@
       }
 
       p {
-        margin-top: 1.8rem;
-        font-size: 2.1rem !important;
+        margin-top: 1.7rem;
+        font-size: 1.8rem !important;
       }
     }
     img {
-      height: 100% !important;
-      width: 100% !important;
-      z-index: 0;
-      filter: brightness(50%);
+      display: none !important;
     }
   }
 }

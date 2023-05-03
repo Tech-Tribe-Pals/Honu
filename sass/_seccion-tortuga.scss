@@ -1,46 +1,29 @@
 #tortuga {
-  overflow:hidden;
-  background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/img/Fondo-Tortuga-PC.png") center no-repeat;
-  background-size: cover;
+  overflow: hidden;
+  background: rgb(3, 90, 84);
+  background: linear-gradient(
+    180deg,
+    rgba(3, 90, 84, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 
-  p {
-
-    font-size:1.8rem;
-    
+  .texto-tortuga {
+    font-size: 1.8rem;
     margin-right: 35% !important;
     font-weight: 100;
 
-    strong {
-      color: white !important;
-      font-weight: bold;
-    }
+    z-index: 2;
   }
 
-  img {
-    top: 18%;
-    right: 10%;
+  .tortuga {
+    filter: invert(27%) sepia(18%) saturate(5477%) hue-rotate(159deg)
+      brightness(40%) contrast(101%);
+    top: 28%;
+
+    right: 16%;
+    z-index: 1;
   }
 }
-
-
-
-
-.slider {width: calc(100%*1);
-  font-size: 25px;
-  animation: efecto 11s infinite linear;
-
-
-  text-transform: uppercase;
-}
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 767.98px) {
   #tortuga {
@@ -48,23 +31,33 @@
     justify-content: center !important;
     align-items: flex-start !important;
 
-    img {
+    .tortuga {
       z-index: 0;
-      width: 350px;
-      top: 55%;
-      right: -14%;
+      width: 250px;
+      top: 60%;
+      right: -10%;
     }
 
-    p {padding: 3rem;
+    .texto-tortuga {
+      margin-right: 0% !important;
+    }
+
+    .linea {
+      bottom: -5% !important;
+    }
+
+    p {
+      padding: 3rem;
       font-size: 2.4rem !important;
       margin: 0% !important;
       width: 100%;
       z-index: 1;
       margin-top: 4rem !important;
+      margin-right: 0% !important;
 
-
-      br {display: none;}
-
+      br {
+        display: none;
+      }
     }
   }
 }

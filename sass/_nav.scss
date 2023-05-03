@@ -12,27 +12,33 @@ header {
     border: none;
   }
 
+  .insig-main {
+    color: #07b8ac !important;
+    text-decoration: none;
+  }
+  
+
   .hamburguesa {
-    color: white;
+    color: #07b8ac !important
   }
 
   .hamburguesa:hover {
-    color: #bf9bde;
+    color: #057c74;
     transition: ease-in-out (0.6s);
   }
 
   .links-nav a:hover {
-    color: #bf9bde !important;
+    color: #035A54 !important;
     transition: ease-in-out (0.6s);
   }
 }
 
-.logo {
+.insig-main {
   text-decoration: none !important;
 }
 
 @media (max-width: 767.98px) {
-  .logo {
+  .insig-main {
     display: none;
   }
 }
