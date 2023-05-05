@@ -194,7 +194,6 @@ section {
     margin: 0% !important;
     width: 100%;
     z-index: 1;
-    margin-top: 4rem !important;
     margin-right: 0% !important;
   }
   #tortuga p br {
@@ -369,9 +368,9 @@ section {
   background-color: white;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 850px) {
   #contacto {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("/img/imagen-contacto.jpeg") center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/imagen-contacto.jpeg") center;
     background-size: cover;
   }
   #contacto img {
@@ -403,10 +402,10 @@ section {
   left: 2rem !important;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 850px) {
   #about {
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("/img/imagen-about.jpeg") center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/imagen-about.jpeg") center;
     background-size: cover;
     align-items: center !important;
   }

@@ -78,7 +78,7 @@ const carousel = (e, click = false) => {
 
   const texto = document.createElement("div");
   texto.className = "texto";
-  texto.innerHTML = `<p>We represent +500 influencers on Tik Tok and Instagram from Chile, Mexico, Brazil, Bolivia, Colombia, Argentina and USA.</p>`;
+  texto.innerHTML = `<p class= "fs-5">We represent +500 influencers on Tik Tok and Instagram from Chile, Mexico, Brazil, Bolivia, Colombia, Argentina and USA.</p>`;
 
   tiktok.appendChild(texto);
   tiktok.appendChild(contador);
@@ -100,11 +100,11 @@ const carousel = (e, click = false) => {
   }
 };
 
-const message = ` WE'RE HONU`;
+const message = `<strong> WE'RE HONU</strong> WE'RE HONU`;
 const messageContainer = document.querySelector(".message-container");
-messageContainer.innerText = message.repeat(100);
-const messageDos = ` LET’S GET STARTED`;
+messageContainer.innerHTML = message.repeat(50);
+const messageDos = `<strong> LET’S GET STARTED</strong> LET’S GET STARTED`;
 const messageContainerDos = document.querySelector(".message-containerDos");
-messageContainer.innerText = message.repeat(100);
+messageContainerDos.innerHTML = messageDos.repeat(50);
 load();
 AOS.init();

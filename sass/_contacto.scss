@@ -1,6 +1,7 @@
 #contacto {
-
-.mensaje {resize: none;}
+  .mensaje {
+    resize: none;
+  }
 
   img {
     object-fit: cover;
@@ -59,10 +60,10 @@
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 850px) {
   #contacto {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
-      url("/img/imagen-contacto.jpeg") center;
+      url("../img/imagen-contacto.jpeg") center;
     background-size: cover;
 
     img {

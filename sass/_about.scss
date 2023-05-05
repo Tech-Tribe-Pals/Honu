@@ -2,12 +2,12 @@
   left: 2rem !important;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 850px) {
   #about {
     overflow: hidden;
 
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
-      url("/img/imagen-about.jpeg") center;
+      url("../img/imagen-about.jpeg") center;
     background-size: cover;
     align-items: center !important;
 
