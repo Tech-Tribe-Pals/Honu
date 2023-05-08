@@ -23,7 +23,7 @@
     gap: 0.5rem;
   }
 
-  .texto {
+  .text {
     text-align: center;
     flex: 0 0 40%;
     display: flex;
@@ -52,7 +52,7 @@
     height: 500px;
     border-radius: 20px;
   }
-  .contador {
+  .counter {
     z-index: 3;
     font-size: 1.2rem;
     font-weight: 700;
@@ -72,7 +72,7 @@
     }
   }
 }
-.texto {
+.text {
   color: black;
 }
 
@@ -96,7 +96,7 @@
       box-shadow: none;
     }
 
-    .contador {
+    .counter {
       font-size: 1.7rem;
       top: 10%;
       left: 32%;
@@ -107,7 +107,7 @@
       }
     }
 
-    .texto {
+    .text {
       margin-bottom: 9rem !important;
       width: 100% !important;
       justify-content: center;

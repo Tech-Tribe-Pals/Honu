@@ -14,15 +14,15 @@ header .insig-main {
   color: #07b8ac !important;
   text-decoration: none;
 }
-header .hamburguesa {
+header .hamburguer {
   color: #07b8ac !important;
 }
-header .hamburguesa:hover {
+header .hamburguer:hover {
   color: #057c74;
   transition: ease-in-out 0.6s;
 }
 header .links-nav a:hover {
-  color: #035A54 !important;
+  color: #035a54 !important;
   transition: ease-in-out 0.6s;
 }
 
@@ -142,28 +142,27 @@ section {
   width: 100%;
 }
 
-.separacion {
+.space {
   height: 2rem;
   background-color: rgb(255, 255, 255);
 }
 
 @media (max-width: 767.98px) {
-  .separacion {
+  .space {
     display: none;
   }
 }
-#tortuga {
+#turtle {
   overflow: hidden;
-  background: rgb(3, 90, 84);
-  background: linear-gradient(180deg, rgb(3, 90, 84) 0%, rgb(255, 255, 255) 100%);
+  background: linear-gradient(180deg, rgb(3, 90, 84) 10%, rgb(255, 255, 255) 90%);
 }
-#tortuga .texto-tortuga {
+#turtle .text-turtle {
   font-size: 1.8rem;
   margin-right: 35% !important;
   font-weight: 100;
   z-index: 2;
 }
-#tortuga .tortuga {
+#turtle .turtle {
   filter: invert(27%) sepia(18%) saturate(5477%) hue-rotate(159deg) brightness(40%) contrast(101%);
   top: 28%;
   right: 16%;
@@ -171,24 +170,24 @@ section {
 }
 
 @media (max-width: 767.98px) {
-  #tortuga {
+  #turtle {
     overflow: hidden;
     justify-content: center !important;
     align-items: flex-start !important;
   }
-  #tortuga .tortuga {
+  #turtle .turtle {
     z-index: 0;
     width: 250px;
     top: 60%;
     right: -10%;
   }
-  #tortuga .texto-tortuga {
+  #turtle .text-turtle {
     margin-right: 0% !important;
   }
-  #tortuga .linea {
+  #turtle .linea {
     bottom: -5% !important;
   }
-  #tortuga p {
+  #turtle p {
     padding: 3rem;
     font-size: 2.4rem !important;
     margin: 0% !important;
@@ -196,7 +195,7 @@ section {
     z-index: 1;
     margin-right: 0% !important;
   }
-  #tortuga p br {
+  #turtle p br {
     display: none;
   }
 }
@@ -222,7 +221,7 @@ section {
   width: 30%;
   gap: 0.5rem;
 }
-#tik-tok .texto {
+#tik-tok .text {
   text-align: center;
   flex: 0 0 40%;
   display: flex;
@@ -231,7 +230,7 @@ section {
   z-index: 3;
   font-weight: bold;
 }
-#tik-tok .texto p {
+#tik-tok .text p {
   width: 50%;
 }
 #tik-tok video {
@@ -247,7 +246,7 @@ section {
   height: 500px;
   border-radius: 20px;
 }
-#tik-tok .contador {
+#tik-tok .counter {
   z-index: 3;
   font-size: 1.2rem;
   font-weight: 700;
@@ -257,17 +256,17 @@ section {
   left: 9%;
   bottom: 50px;
 }
-#tik-tok .contador div:nth-child(1) {
+#tik-tok .counter div:nth-child(1) {
   border-right: 2px solid #fff;
 }
-#tik-tok .contador div {
+#tik-tok .counter div {
   padding: 5px;
 }
-#tik-tok .contador div p {
+#tik-tok .counter div p {
   margin: 0;
 }
 
-.texto {
+.text {
   color: black;
 }
 
@@ -289,21 +288,21 @@ section {
     filter: brightness(67%);
     box-shadow: none;
   }
-  #tik-tok .contador {
+  #tik-tok .counter {
     font-size: 1.7rem;
     top: 10%;
     left: 32%;
     color: white !important;
   }
-  #tik-tok .contador div:nth-child(1) {
+  #tik-tok .counter div:nth-child(1) {
     border: none;
   }
-  #tik-tok .texto {
+  #tik-tok .text {
     margin-bottom: 9rem !important;
     width: 100% !important;
     justify-content: center;
   }
-  #tik-tok .texto p {
+  #tik-tok .text p {
     font-size: 1.5rem;
     color: #ffffff !important;
     width: 80% !important;
@@ -316,26 +315,26 @@ section {
     background-color: #ffffff !important;
   }
 }
-#contacto .mensaje {
+#contact .mensaje {
   resize: none;
 }
-#contacto img {
+#contact img {
   object-fit: cover;
   height: 93%;
   right: 2rem !important;
 }
-#contacto .modal-content {
+#contact .modal-content {
   background-color: rgba(255, 255, 255, 0.8) !important;
   z-index: 1000 !important;
 }
-#contacto .boton-close {
+#contact .boton-close {
   background-color: transparent !important;
   border: none !important;
 }
-#contacto .modal-header {
+#contact .modal-header {
   background-color: #035a54 !important;
 }
-#contacto .btn-contact {
+#contact .btn-contact {
   left: 1rem;
   text-transform: uppercase;
   width: 175px;
@@ -354,42 +353,42 @@ section {
   border: 2px solid #035a54;
   box-shadow: inset 0 0 0 0 #035a54;
 }
-#contacto .btn-contact:hover {
+#contact .btn-contact:hover {
   color: white;
   box-shadow: inset 0 -100px 0 0 #035a54;
 }
-#contacto .btn-contact:active {
+#contact .btn-contact:active {
   transform: scale(0.9);
 }
-#contacto .modal-main {
+#contact .modal-main {
   background-color: rgba(0, 0, 0, 0.2) !important;
 }
-#contacto .btn-close {
+#contact .btn-close {
   background-color: white;
 }
 
 @media (max-width: 850px) {
-  #contacto {
+  #contact {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/imagen-contacto.jpeg") center;
     background-size: cover;
   }
-  #contacto img {
+  #contact img {
     display: none;
   }
-  #contacto article {
+  #contact article {
     width: 100% !important;
     color: white !important;
   }
-  #contacto article h2 {
+  #contact article h2 {
     width: 80% !important;
     color: white;
     font-size: 2.5rem;
   }
-  #contacto article p {
+  #contact article p {
     font-size: 1.8rem !important;
     width: 70% !important;
   }
-  #contacto article .btn-contact {
+  #contact article .btn-contact {
     margin-top: 2px !important;
     padding: 12px !important;
   }
@@ -514,13 +513,13 @@ section {
     left: -100%;
   }
 }
-teleprompter-containerr {
+teleprompter-container {
   overflow: hidden;
   width: 10%;
   height: 10%;
 }
 
-.message-containerDos {
+.message-containerTwo {
   color: #4a706e;
   position: absolute;
   top: 50%;
@@ -528,7 +527,7 @@ teleprompter-containerr {
   white-space: nowrap;
   animation: scroll-right 20s linear infinite;
 }
-.message-containerDos strong {
+.message-containerTwo strong {
   -webkit-text-stroke-color: #4a706e;
   -webkit-text-stroke-width: 0.5px;
   color: transparent !important;

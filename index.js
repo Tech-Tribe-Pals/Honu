@@ -45,11 +45,11 @@ const carousel = (e, click = false) => {
   count = e;
   countDown = 0;
   const card = document.createElement("div");
-  const contador = document.createElement("div");
+  const counter = document.createElement("div");
   const controlers = document.createElement("div");
   card.className = "card";
   controlers.className = "btn-tiktok";
-  contador.className = "contador";
+  counter.className = "counter";
   tiktok.innerHTML = "";
   card.innerHTML = `
     <video loop autoplay muted src=${tiktokContent[e].video}>
@@ -57,7 +57,7 @@ const carousel = (e, click = false) => {
 
   const intervalId = setInterval(() => {
     countDown++;
-    contador.innerHTML = `
+    counter.innerHTML = `
         <div class="likes">
         <p>${countDown}K</p>
         <p>likes</p>
@@ -76,12 +76,12 @@ const carousel = (e, click = false) => {
     `;
   });
 
-  const texto = document.createElement("div");
-  texto.className = "texto";
-  texto.innerHTML = `<p class= "fs-5">We represent +500 influencers on Tik Tok and Instagram from Chile, Mexico, Brazil, Bolivia, Colombia, Argentina and USA.</p>`;
+  const text = document.createElement("div");
+  text.className = "text";
+  text.innerHTML = `<p class= "fs-5">We represent +500 influencers on Tik Tok and Instagram from Chile, Mexico, Brazil, Bolivia, Colombia, Argentina and USA.</p>`;
 
-  tiktok.appendChild(texto);
-  tiktok.appendChild(contador);
+  tiktok.appendChild(text);
+  tiktok.appendChild(counter);
   tiktok.appendChild(card);
   tiktok.appendChild(controlers);
 
@@ -104,7 +104,7 @@ const message = `<strong> WE'RE HONU</strong> WE'RE HONU`;
 const messageContainer = document.querySelector(".message-container");
 messageContainer.innerHTML = message.repeat(50);
 const messageDos = `<strong> LET’S GET STARTED</strong> LET’S GET STARTED`;
-const messageContainerDos = document.querySelector(".message-containerDos");
+const messageContainerDos = document.querySelector(".message-containerTwo");
 messageContainerDos.innerHTML = messageDos.repeat(50);
 load();
 AOS.init();

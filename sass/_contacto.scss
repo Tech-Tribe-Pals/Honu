@@ -1,4 +1,4 @@
-#contacto {
+#contact {
   .mensaje {
     resize: none;
   }
@@ -61,7 +61,7 @@
 }
 
 @media (max-width: 850px) {
-  #contacto {
+  #contact {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
       url("../img/imagen-contacto.jpeg") center;
     background-size: cover;
