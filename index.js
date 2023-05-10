@@ -1,4 +1,4 @@
-const contacto = document.getElementById("contacto");
+const contacto = document.getElementById("contact");
 const loading = document.getElementById("loading");
 const tiktok = document.getElementById("tik-tok");
 let count = 0;
@@ -24,7 +24,7 @@ const tiktokContent = [
 ];
 
 const scrollToContacto = () => {
-  document.getElementById("contacto").scrollIntoView();
+  document.getElementById("contact").scrollIntoView();
 };
 
 const transition = () => {
