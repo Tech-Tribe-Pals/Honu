@@ -1,8 +1,9 @@
 #home {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
-    url("../img/imagen-home.jpeg");
+    url("../img/fondo-nuevo.jpg");
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
   article {
     flex-direction: row !important;
   }
@@ -90,6 +91,7 @@
 // MEDIAQ DE CELULAR
 @media (max-width: 512px) {
   #home {
+    background-position-x: center;
     article {
       justify-content: center !important;
     }

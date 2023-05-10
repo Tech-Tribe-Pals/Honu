@@ -36,9 +36,10 @@ header .links-nav a:hover {
   }
 }
 #home {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/imagen-home.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/fondo-nuevo.jpg");
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
 }
 #home article {
   flex-direction: row !important;
@@ -111,6 +112,9 @@ header .links-nav a:hover {
   }
 }
 @media (max-width: 512px) {
+  #home {
+    background-position-x: center;
+  }
   #home article {
     justify-content: center !important;
   }
@@ -392,6 +396,7 @@ section {
     margin-top: 2px !important;
     padding: 12px !important;
   }
+
   .modal-content {
     color: black;
     z-index: 1000 !important;

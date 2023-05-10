@@ -2,18 +2,12 @@
     "name": "honu",
     "version": "1.0.0",
     "description": "",
-    
-
-
-"scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sass --watch sass/output.scss css/output.css",
-    "sass": "npm i -g sass"
-  }
-
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "sass --watch sass/output.scss css/output.css",
+        "sass": "npm i -g sass"
+    },
+    "devDependencies": {
+        "wrangler": "^2.20.0"
+    }
 }
-
-
-
-
-
